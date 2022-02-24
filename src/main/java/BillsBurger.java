@@ -1,3 +1,4 @@
+import model.DeluxeBurger;
 import model.Hamburger;
 import model.HealthyBurger;
 
@@ -18,6 +19,9 @@ public class BillsBurger {
         healthyBurger.addHamburgerAddition1("Egg", 5.43);
         // healthyBurger.itemizeHamburger();
         healthyBurger.addHealthAddition1("Lentils", 3.41);
-        System.out.println("Totel burger price: " + healthyBurger.itemizeHamburger());
+        System.out.println("Total burger price: " + healthyBurger.itemizeHamburger());
+
+        DeluxeBurger deluxeBurger = new DeluxeBurger();
+        System.out.println("Total burger price: " + deluxeBurger.itemizeHamburger());
     }
 }
