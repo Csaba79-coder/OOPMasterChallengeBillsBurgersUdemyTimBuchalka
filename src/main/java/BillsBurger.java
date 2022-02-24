@@ -1,4 +1,5 @@
 import model.Hamburger;
+import model.HealthyBurger;
 
 public class BillsBurger {
 
@@ -11,5 +12,12 @@ public class BillsBurger {
         hamburger.addHamburgerAddition3("Cheese", 1.12);
         price = hamburger.itemizeHamburger();
         System.out.println("Total burger price is " + price); // instead of price: hamburger.itemizeHamburger() <-- if I do not want to store it in variable!
+
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        //healthyBurger.itemizeHamburger();
+        healthyBurger.addHamburgerAddition1("Egg", 5.43);
+        // healthyBurger.itemizeHamburger();
+        healthyBurger.addHealthAddition1("Lentils", 3.41);
+        System.out.println("Totel burger price: " + healthyBurger.itemizeHamburger());
     }
 }
